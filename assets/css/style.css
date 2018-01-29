@@ -38,10 +38,32 @@ header.container {
     border-color:#dddddd;
     background-color:#ffffff;
     margin-top:20px;
-    margin-bottom:20px;
-    
+    margin-bottom:20px;    
 }
-
+.zoomin img {
+    height:50px;
+    width:50px;
+    -webkit-transition: all .5s ease; 
+    -moz-transition: all .5s ease; 
+    -ms-transition: all .5s ease; 
+    transition: all .5s ease;
+}
+.zoomin img:hover { 
+    width: 75px; height: 75px;
+     
+}
+ .zoomin {
+    width:270px;
+    padding-left:60px;
+}
+.contactimg {
+    float:left;
+    margin:auto;
+    position:relative;
+}
+.contenthead {
+    font-size:24px;
+}
 .sidebar {
     width:270px;
     float:right;
@@ -49,21 +71,24 @@ header.container {
     background-color:#ffffff;
     text-align:center;
     margin-top:20px;
+    padding-bottom:40px;
+    padding-top:20px;
 }
 
 .sidebar a,h1 {
     margin:auto;
+    font-size:18px;
 }
 a:link {
     color:#777777;
     text-decoration:none;
 }
 a:visited {
-    color:#633c64;
+    color:#007c33;
     text-decoration:none;
 }
 a:hover {
-    color:#4a55f7;
+    color:#e89f0c;
     text-decoration:none;
 }
 
@@ -115,6 +140,7 @@ h1 {
     color:#4aaaa5;
     font-family:'Georgia', Times, Times New Roman, serif;
     padding:10px;
+    font-weight:bold;
 }
 
 .divider {
@@ -129,9 +155,6 @@ h1 {
 #connectdivider {
     border-bottom-width:1px;
 }
-contenthead {
-    font-size=24px;
-}
 
 .nametab {
     background-color:#4aaaa5;
@@ -139,6 +162,8 @@ contenthead {
     padding:20px;
     float:left;
     font-size:24px;
+    font-weight:bold;
+    font-family:'Georgia', Times, Times New Roman, serif;
 }
 
 p {
@@ -169,3 +194,26 @@ img.profileimg {
     height: 142px; 
   }
   
+  form {
+      font-size:18px;
+      float:none;
+      padding:20px;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size:12px;
+}
+input.submit {
+    padding:10px 20px 10px 20px;
+    font-size:16px;
+    background-color:#4aaaa5;
+    color:ghostwhite;
+}
